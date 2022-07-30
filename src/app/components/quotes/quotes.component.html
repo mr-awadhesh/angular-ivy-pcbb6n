@@ -1,0 +1,6 @@
+
+<div *ngFor="let quote of quotesArr">
+  <p>{{ quote.quote }}</p>
+  <button (click)='onClick(quote)'>View Details</button>
+</div>
+<app-quote-details [quote] = 'quote' [id]='id'></app-quote-details>
